@@ -1,0 +1,10 @@
+{
+  "name": "webstudio-scss",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch scss:cssx"
+  },
+  "devDependencies": {
+    "sass": "^1.92.0"
+  }
+}
