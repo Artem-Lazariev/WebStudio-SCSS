@@ -13,6 +13,11 @@
   .container {
     width: 768px;
   }
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {

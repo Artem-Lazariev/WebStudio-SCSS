@@ -58,7 +58,7 @@
     letter-spacing: 0.4px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advant__list{
     flex-wrap: wrap;
     justify-content: center;
@@ -69,7 +69,7 @@
     padding-bottom: 180px;
   }
 }//test
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .advant__list{
     flex-wrap: wrap;
     justify-content: center;
