@@ -1,4 +1,4 @@
-
+@use "../base/variables" ;
 .work {
   padding-top: 94px;
   margin-top: 90px;
@@ -6,7 +6,7 @@
   text-align: center;
 
   &__title {
-  color: $text-color;
+  color: variables.$text-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -36,7 +36,7 @@
 }
 
 &__deck {
-  color: $title-color;
+  color: variables.$title-color;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -46,11 +46,13 @@
 }
 
 }
+/* від 0px до 1199px */
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
 }
+
 
 
 

@@ -1,13 +1,14 @@
 @use "./base/common";
-@import "./base/container";
-@import "./base/resset";
-@import "./base/variables";
-@import "./sections/header";
-@import "./sections/hero";
-@import "./sections/advant";
-@import "./sections/work";
-@import "./sections/team";
-@import "./sections/client";
-@import "./sections/footer";
-@import "./sections/modal";
-@import "./sections/portfolio";
+@use "./base/container";
+@use "./base/resset";
+@use "./base/variables";
+@use "./sections/header";
+@use "./sections/hero";
+@use "./sections/advant";
+@use "./sections/work";
+@use "./sections/team";
+@use "./sections/client";
+@use "./sections/footer";
+@use "./sections/modal";
+@use "./sections/portfolio";
+//

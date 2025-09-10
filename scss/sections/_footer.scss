@@ -1,4 +1,4 @@
-
+@use "../base/variables" as *;
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -34,7 +34,7 @@
 }
 
 &__box {
-  margin-left: 70px;
+  margin-left: 0px;
 }
 
 &__position {
@@ -168,67 +168,48 @@
 }
 
 }
-@media screen and (min-width: 480px)and (max-width: 768px) {
+/* від 481px до 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 100px;
   }
+  .footer__block {
+    margin-left: 0;
+  }
 }
-@media screen and (max-width: 480px) {
+
+/* від 322px до 480px */
+@media screen and (min-width: 322px) and (max-width: 480px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 100px;
     flex-direction: column;
+  }
+  .footer__block {
+    margin-left: 0;
+  }
+  .footer__form {
+    flex-direction: column;
+  }
+  .footer .container {
+    align-items: center;
+  }
+}
 
-}
-.footer__form{
-  margin-left: -80px;
-  width: 75%;
-}
-  .footer__btn{
-    width: 50%;
-  }
-  .footer__box{
-    margin-left: -160px;
-  }
-  .footer__title{
-    margin-left: 40px;
-  }
-  .footer__wrapper{
-    margin-left: -80px;
-  }
-}
+/* до 321px */
 @media screen and (max-width: 321px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 100px;
     flex-direction: column;
-
   }
-  .footer__form{
-    margin-left: -120px;
-    width: 75%;
-  }
-  .footer__btn{
-    width: 50%;
-  }
-  .footer__box{
-    margin-left: -160px;
-  }
-  .footer__title{
-    margin-left: 40px;
-  }
-  .footer__wrapper{
-    margin-left: -80px;
-  }
-  .footer{
-    margin-left: -25%;
-  }
-  .footer__block{
+  .footer__block {
     transform: scale(0.7);
   }
 }
+
 

@@ -1,4 +1,4 @@
-
+@use "../base/variables" as *;
 // ================== TEAM SECTION ==================
 .team {
   padding-top: 94px;
@@ -31,20 +31,29 @@
     0px 2px 1px rgba(0,0,0,0.2);
     overflow: hidden;
 
-    @media (max-width: 1200px) {
-      flex-basis: calc((100% - 60px) / 3); // 3 картки
+
+    /* від 481px до 768px → 2 картки */
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      .card {
+        flex-basis: calc((100% - 30px) / 2); /* 2 картки */
+      }
     }
 
-    @media (max-width: 768px) {
-      flex-basis: calc((100% - 30px) / 2); // 2 картки
+    /* від 321px до 480px → 1 картка */
+    @media screen and (min-width: 321px) and (max-width: 480px) {
+      .card {
+        flex-basis: 100%; /* 1 картка */
+      }
     }
 
-    @media (max-width: 480px) {
-      flex-basis: 100%; // 1 картка
+    /* до 320px → можна ще зменшити/масштабувати */
+    @media screen and (max-width: 320px) {
+      .card {
+        flex-basis: 100%;
+        transform: scale(0.9); /* приклад */
+      }
     }
-    @media (max-width: 320px) {
 
-    }
   }
 
   &__img {

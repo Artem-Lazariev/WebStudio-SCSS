@@ -1,4 +1,4 @@
-
+@use "../base/variables" as *;
 .client {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -18,13 +18,28 @@
 &__list {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 767px) {
-    flex-basis: calc((100% - 30px) / 3);//test
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  /* від 481px до 767px */
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .your-class {
+      flex-basis: calc((100% - 30px) / 3); /* test */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
   }
+
+  /* до 480px */
+  @media screen and (max-width: 480px) {
+    .your-class {
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* можеш підлаштувати під мобільні */
+    }
+  }
+
 }
+
 
 
 &__item:hover {

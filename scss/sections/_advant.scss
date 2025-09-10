@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 .advant {
   padding-top: 94px;
 
@@ -58,32 +59,41 @@
     letter-spacing: 0.4px;
   }
 }
-@media screen and (max-width: 768px) {
-  .advant__list{
+/* від 481px до 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .advant__list {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     row-gap: 110px;
   }
-  .advant{
-    padding-bottom: 180px;
-  }
-}//test
-@media screen and (max-width: 480px) {
-  .advant__list{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    row-gap: 110px;
-  }
-
 }
+
+/* від 322px до 480px */
+@media screen and (min-width: 322px) and (max-width: 480px) {
+  .advant__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    row-gap: 110px;
+  }
+  .advant__item::before {
+    width: 100%;
+    height: 120px;
+  }
+}
+
+/* від 0px до 321px */
 @media screen and (max-width: 321px) {
-   .advant__list{
+  .advant__list {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
     row-gap: 110px;
-     margin-left: 0;
+    margin-left: 0;
+  }
+  .advant__item::before {
+    width: 100%;
+    height: 120px;
   }
 }
