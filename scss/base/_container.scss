@@ -15,6 +15,11 @@
   .container {
     width: 768px;
   }
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 /* від 321px до 480px */

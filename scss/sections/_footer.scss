@@ -168,8 +168,7 @@
 }
 
 }
-/* від 481px до 768px */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px)and (max-width: 1199px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
@@ -198,9 +197,7 @@
     align-items: center;
   }
 }
-
-/* до 321px */
-@media screen and (max-width: 321px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
