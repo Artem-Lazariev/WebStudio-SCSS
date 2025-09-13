@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto";
 }
@@ -8,21 +9,30 @@ body {
   padding: 0 15px;
 }
 
-@media screen and (max-width: 1200px) {
+/* від 769px до 1200px */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
-@media screen and (max-width: 768px) {
+/* від 481px до 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     width: 768px;
   }
+  .header .container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
-@media screen and (max-width: 480px) {
+/* від 321px до 480px */
+@media screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     width: 480px;
   }
 }
+/* від 0px до 320px */
 @media screen and (max-width: 320px) {
   .container {
     width: 320px;
@@ -156,13 +166,15 @@ h1, h2, h3, p {
   transform: scale(1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+/* від 481px до 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .header__list {
     flex-direction: column;
     margin-left: 40px;
     gap: 10px;
   }
 }
+/* до 480px */
 @media screen and (max-width: 480px) {
   .header__list {
     display: none;
@@ -195,7 +207,7 @@ h1, h2, h3, p {
   animation-name: title-move;
   animation-duration: 2000ms;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero__title {
     width: calc(50vw + 200px);
   }
@@ -237,9 +249,27 @@ h1, h2, h3, p {
   }
 }
 
+/* від 0px до 321px */
 @media screen and (max-width: 321px) {
   .hero__title {
     width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+  }
+}
+/* від 322px до 480px */
+@media screen and (min-width: 322px) and (max-width: 480px) {
+  .hero__title {
+    width: 100%; /* можеш підлаштувати */
+  }
+}
+/* від 481px до 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero__title {
+    width: 400px; /* приклад */
   }
 }
 .advant {
@@ -293,12 +323,26 @@ h1, h2, h3, p {
   letter-spacing: 0.4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advant__list {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     row-gap: 110px;
+  }
+  .advant {
+    padding-bottom: 180px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .advant__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    row-gap: 110px;
+  }
+  .advant {
+    padding-bottom: 180px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -308,7 +352,11 @@ h1, h2, h3, p {
     gap: 15px;
     row-gap: 110px;
   }
-  .advant__item::before {
+  .advant {
+    padding-bottom: 180px;
+  }
+  .advant__item {
+    justify-content: center;
     width: 100%;
     height: 120px;
   }
@@ -321,9 +369,8 @@ h1, h2, h3, p {
     row-gap: 110px;
     margin-left: 0;
   }
-  .advant__item::before {
-    width: 100%;
-    height: 120px;
+  .advant {
+    padding-bottom: 180px;
   }
 }
 .work {
@@ -367,6 +414,7 @@ h1, h2, h3, p {
   text-transform: uppercase;
 }
 
+/* від 0px до 1199px */
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
@@ -399,17 +447,12 @@ h1, h2, h3, p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-@media (max-width: 1200px) {
-  .team__item {
-    flex-basis: calc((100% - 60px) / 3);
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 1199px) {
   .team__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 0) and (max-width: 480px) {
   .team__item {
     flex-basis: 100%;
   }
@@ -482,13 +525,23 @@ h1, h2, h3, p {
 .client__list {
   display: flex;
   justify-content: space-between;
+  /* від 481px до 767px */
+  /* до 480px */
 }
-@media screen and (max-width: 767px) {
-  .client__list {
-    flex-basis: calc((100% - 30px) / 3);
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .client__list .your-class {
+    flex-basis: calc((100% - 30px) / 3); /* test */
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .client__list .your-class {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* можеш підлаштувати під мобільні */
   }
 }
 .client__item:hover .client__link {
@@ -658,7 +711,7 @@ h1, h2, h3, p {
   fill: #fff;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
@@ -668,7 +721,8 @@ h1, h2, h3, p {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 480px) {
+/* від 322px до 480px */
+@media screen and (min-width: 322px) and (max-width: 480px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
@@ -685,14 +739,14 @@ h1, h2, h3, p {
     align-items: center;
   }
 }
-@media screen and (max-width: 321px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .footer > .container {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 100px;
     flex-direction: column;
   }
-  .footer > .container .footer__block {
+  .footer__block {
     transform: scale(0.7);
   }
 }
