@@ -1,37 +1,19 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-}
-/* від 769px до 1200px */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
+  /* outline: 1px solid red; */
 
-/* від 481px до 768px */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    width: 768px;
-  }
-  .header .container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-
-/* від 321px до 480px */
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  .container {
+  @media screen and (min-width: 480px) {
     width: 480px;
-  }
-}
+   }
 
-/* від 0px до 320px */
-@media screen and (max-width: 320px) {
-  .container {
-    width: 320px;
-  }
+   @media screen and (min-width: 768px) {
+    width: 768px;
+   }
+
+   @media screen and (min-width: 1200px) {
+    width: 1200px;
+   }
 }

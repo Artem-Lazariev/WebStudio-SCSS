@@ -1,33 +1,92 @@
-@use "../base/variables" as *;
+@use "../base/variables" as *; // підключаємо змінні глобально
+.button {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+   
+  
+
+  &__btn {
+    color: $text-color;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    background: $team-background;
+    padding: 6px 22px;
+    border: transparent;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $title-color;
+      background-color: $accent-color;
+      box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    }
+
+     
+    }
+
+
+  }
+
+   
+
+
 
 .card {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-left: 20px;   // мобільні відступи менші
-    padding-right: 20px;
-
-    @media screen and (min-width: 756px) {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
   }
 
   &__item {
-    flex-basis: 100%; // 📱 мобільні: 1 картка
+    flex-basis: calc(100%);
     border: 1px solid #eeeeee;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+   
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
     &:hover {
       box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-      1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     }
 
     &:hover .card__desk {
@@ -47,8 +106,8 @@
   &__desk {
     width: 100%;
     height: 100%;
-    background-color: $accent-color;
-    padding: 63px 24px;
+    background-color:rgba(133, 150, 243, 0.90);
+    padding: 77px 24px;
     color: $title-color;
     font-size: 18px;
     font-weight: 400;
@@ -61,6 +120,14 @@
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
 
   &__wrap {
@@ -83,51 +150,6 @@
     line-height: 1.87;
     letter-spacing: 0.48px;
   }
-
-  /* 📲 планшети 756–1199px → 2 картки */
-  @media screen and (min-width: 756px) and (max-width: 1199px) {
-    &__item {
-      flex-basis: calc((100% - 30px) / 2);
-    }
-  }
-
-  /* 💻 десктопи ≥1200px → 3 картки */
-  @media screen and (min-width: 1200px) {
-    &__item {
-      flex-basis: calc((100% - 60px) / 3);
-    }
-  }
 }
 
-.button__list {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
-}
 
-.button__btn {
-  color: $text-color;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
-  border-radius: 4px;
-  background: $team-background;
-  padding: 6px 22px;
-  border: none;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $title-color;
-    background-color: $accent-color;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  }
-}

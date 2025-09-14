@@ -1,45 +1,59 @@
-@use "../base/variables" as *;
+@use "../base/variables" as *; // підключаємо змінні глобально
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  padding-bottom: 94px;
+  }
 
 
   &__title {
   color: $text-color;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    letter-spacing: 1.08px;
   margin-bottom: 50px;
+
+  }
 }
 
 &__list {
   display: flex;
-  justify-content: space-between;
-  /* від 481px до 767px */
-  @media screen and (min-width: 481px) and (max-width: 767px) {
-    .your-class {
-      flex-basis: calc((100% - 30px) / 3); /* test */
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-  }
+   flex-wrap: wrap;
+  row-gap: 30px;
+  // justify-content: space-between;
+  gap: 30px;
 
-  /* до 480px */
-  @media screen and (max-width: 480px) {
-    .your-class {
-      flex-basis: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px; /* можеш підлаштувати під мобільні */
-    }
+    @media screen and (min-width: 480px) {
+    
   }
-
+  
 }
 
+&__item{
+
+  flex-basis: calc((100% - 30px) / 2);
+
+   @media screen and (min-width: 480px) {
+    
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
 
 
 &__item:hover {
@@ -53,15 +67,27 @@
 
 
 &__link {
+  // flex-shrink: 1;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  padding: 16px 32px;
+  width: 100%;
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 

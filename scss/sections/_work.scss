@@ -1,12 +1,17 @@
-@use "../base/variables" ;
+@use "../base/variables" as *; // підключаємо змінні глобально
 .work {
   padding-top: 94px;
-  margin-top: 90px;
   padding-bottom: 94px;
   text-align: center;
+  display: none;
+
+  
+   @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   &__title {
-  color: variables.$text-color;
+  color: $text-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -36,7 +41,7 @@
 }
 
 &__deck {
-  color: variables.$title-color;
+  color: $title-color;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -46,13 +51,6 @@
 }
 
 }
-/* від 0px до 1199px */
-@media screen and (max-width: 1199px) {
-  .work {
-    display: none;
-  }
-}
-
 
 
 

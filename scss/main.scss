@@ -1,14 +1,21 @@
-@use "./base/common";
-@use "./base/container";
-@use "./base/resset";
-@use "./base/variables";
-@use "./sections/header";
-@use "./sections/hero";
-@use "./sections/advant";
-@use "./sections/work";
-@use "./sections/team";
-@use "./sections/client";
-@use "./sections/footer";
-@use "./sections/modal";
-@use "./sections/portfolio";
-//
+// ------------------------
+// Base
+// ------------------------
+@use "base/variables" as *; // підключаємо змінні глобально
+@use "base/resset";           // базові скидання стилів
+@use "base/common";
+@use "base/container";
+
+// ------------------------
+// Sections
+// ------------------------
+@use "sections/header";
+@use "sections/hero";
+@use "sections/advant";
+@use "sections/work";
+@use "sections/team";
+@use "sections/client";
+@use "sections/footer";
+@use "sections/modal";
+@use "sections/portfolio";
+
