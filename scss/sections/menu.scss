@@ -1,0 +1,102 @@
+@use "../base/variables" as *; // підключаємо змінні глобально
+.menu{
+  display: none;
+  border: none;
+  background: none;
+}
+.menu svg{
+  width: 24px;
+  height: 16px;
+}
+@media screen and (max-width: 767px){
+  .menu{
+    display: block;
+  }
+}
+.mobile-menu {
+  background: #fff;
+  border: 1px solid #000000;
+  display: none;
+  position: fixed;   /* завжди фіксовано відносно вікна браузера */
+  top: 50%;          /* 50% від висоти вікна */
+  left: 50%;         /* 50% від ширини вікна */
+  transform: translate(-50%, -50%); /* щоб точно по центру */
+  width: 100vw;
+  height: 100vh;
+}
+.mobile-menu {
+  &__close svg{
+    width: 19px;
+    height: 19px;
+  }
+  &__close{
+    border: none;
+    background: none;
+    margin-left: 710px;
+    margin-top: 20px;
+  }
+
+  &__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  }
+  .content{
+    padding-top: 40px;
+    gap: 200px;
+    display: flex;
+    flex-direction: column;
+  }//test
+.mobile-menu__nav__item a {
+  font-size: 40px;
+  color: #2f303a;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.mobile-menu__contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.mobile-menu__contacts__item  {
+  font-size: 34px;
+  color: #2f303a;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.mobile-menu__contacts{
+  display: flex;
+  flex-direction:column;
+}
+.mobile-menu__contacts__item  {
+  font-size: 36px;
+  color: #2f303a;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.mobile-menu__contacts__messenger {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.mobile-menu__contacts__messenger__item  {
+  font-size: 18px;
+  color: #2f303a;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  border-right: 1px solid #2f303a;
+  padding-right: 20px;
+}//test

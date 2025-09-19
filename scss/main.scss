@@ -1,21 +1,20 @@
-// ------------------------
-// Base
-// ------------------------
-@use "base/variables" as *; // підключаємо змінні глобально
-@use "base/resset";           // базові скидання стилів
+// =====================
+// Base styles
+// =====================
+@use "base/variables";
 @use "base/common";
 @use "base/container";
 
-// ------------------------
+// =====================
 // Sections
-// ------------------------
+// =====================
 @use "sections/header";
 @use "sections/hero";
 @use "sections/advant";
-@use "sections/work";
-@use "sections/team";
 @use "sections/client";
-@use "sections/footer";
-@use "sections/modal";
+@use "sections/team";
+@use "sections/work";
 @use "sections/portfolio";
-
+@use "sections/modal";
+@use "sections/footer";
+@use "sections/menu";

@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass main.scss main.css",
+    "sass:watch": "sass --watch scss/main.scss style/main.css --source-map",
+    "sass:prod": "sass main.scss main.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.79.0"
+  }
+}
