@@ -1215,13 +1215,9 @@ body {
   font-size: 18px;
   color: #2f303a;
   font-weight: 500;
-}
-.mobile-menu__contacts__messenger__item:hover, .mobile-menu__contacts__messenger__item:focus {
-  color: #2196f3;
-}
-.mobile-menu__contacts__messenger__item {
   border-right: 1px solid #2f303a;
   padding-right: 20px;
 }
-
-/*# sourceMappingURL=main.css.map */
+.mobile-menu__contacts__messenger__item:hover, .mobile-menu__contacts__messenger__item:focus {
+  color: #2196f3;
+}/*# sourceMappingURL=main.css.map */
