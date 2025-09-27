@@ -47,6 +47,17 @@
       letter-spacing: 1.56px;
       text-transform: uppercase;
       width: 360px;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .hero{
+          background-image: linear-gradient(
+                          rgba(47, 48, 58, 0.4),
+                          rgba(47, 48, 58, 0.4)
+          ),
+          url(../img/hero2x.webp);
+        }
+      }
     }
 
     @media screen and (min-width: 1200px) {
@@ -54,6 +65,17 @@
       line-height: 1.36;
       letter-spacing: 2.64px;
       width: 696px;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .hero{
+          background-image: linear-gradient(
+                          rgba(47, 48, 58, 0.4),
+                          rgba(47, 48, 58, 0.4)
+          ),
+          url(../img/hero2x.webp);
+        }
+      }
     }
   }
 
