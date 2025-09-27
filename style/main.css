@@ -306,14 +306,34 @@ body {
 .advant__item:first-child::before {
   background-image: url(../img/antenna.png);
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item:first-child::before {
+    background-image: url(../img/advant/antenna@x2.webp);
+  }
+}
 .advant__item:nth-child(2)::before {
   background-image: url(../img/clock.png);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item:nth-child(2)::before {
+    background-image: url(../img/advant/clock.webp);
+  }
 }
 .advant__item:nth-child(3)::before {
   background-image: url(../img/diagram.png);
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item:nth-child(3)::before {
+    background-image: url(../img/advant/diagram.webp);
+  }
+}
 .advant__item:last-child::before {
   background-image: url(../img/astronaut.png);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advant__item:last-child::before {
+    background-image: url(../img/advant/astronaut.webp);
+  }
 }
 .advant__title {
   color: #212121;
@@ -1215,9 +1235,13 @@ body {
   font-size: 18px;
   color: #2f303a;
   font-weight: 500;
-  border-right: 1px solid #2f303a;
-  padding-right: 20px;
 }
 .mobile-menu__contacts__messenger__item:hover, .mobile-menu__contacts__messenger__item:focus {
   color: #2196f3;
-}/*# sourceMappingURL=main.css.map */
+}
+.mobile-menu__contacts__messenger__item {
+  border-right: 1px solid #2f303a;
+  padding-right: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

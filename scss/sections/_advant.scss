@@ -49,18 +49,38 @@
 
     &:first-child::before {
       background-image: url(../img/antenna.png);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../img/advant/antenna@x2.webp)
+      }
     }
 
     &:nth-child(2)::before {
       background-image: url(../img/clock.png);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../img/advant/clock.webp)
+      }
     }
 
     &:nth-child(3)::before {
       background-image: url(../img/diagram.png);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../img/advant/diagram.webp)
+      }
     }
 
     &:last-child::before {
       background-image: url(../img/astronaut.png);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../img/advant/astronaut.webp)
+      }
     }
   }
 
