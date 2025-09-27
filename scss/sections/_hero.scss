@@ -1,75 +1,82 @@
 @use "../base/variables" as *; // підключаємо змінні глобально
 .hero {
-       padding-top: 118px;
+  padding-top: 118px;
   padding-bottom: 118px;
-   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/hero.webp);
+  background-image: linear-gradient(
+                  rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)
+  ),
+  url(../img/hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 
 
- 
- 
-  
-    @media screen and (min-width: 1200px) {
-     padding-top: 200px;
-  padding-bottom: 200px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero{
+    background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero2x.webp);
+    }
+    }
   }
 
 
-  
-&__title {
-  color: $title-color;
-  text-align: center;
-  font-weight: 900;
-  text-transform: uppercase;
-  // width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  &__title {
+    color: $title-color;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    // width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 
 
     @media screen and (min-width: 480px) {
-font-size: 26px;
-line-height: 42px; /* 161.538% */
-letter-spacing: 1.56px;
-text-transform: uppercase;
-width: 360px;
-  }
-  
+      font-size: 26px;
+      line-height: 42px; /* 161.538% */
+      letter-spacing: 1.56px;
+      text-transform: uppercase;
+      width: 360px;
+    }
+
     @media screen and (min-width: 1200px) {
-  font-size: 44px;
-    line-height: 1.36;
-     letter-spacing: 2.64px;
-     width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 2.64px;
+      width: 696px;
+    }
   }
-}
 
 
-&__btn {
-  color: $title-color;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87; 
-  letter-spacing: 0.96px;
-  background-color: $accent-color;
-  padding: 10px 24px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  &__btn {
+    color: $title-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    background-color: $accent-color;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
- 
+
     @media screen and (min-width: 1200px) {
-    padding: 10px 32px;
+      padding: 10px 32px;
+    }
+
   }
- 
-}
 
 }
 
