@@ -5,7 +5,7 @@ const teams = [
     document.getElementById("team3"),
     document.getElementById("team4")
 ];
-
+const  mas = document.getElementById("mas");
 const works = [
     document.getElementById("work1"),
     document.getElementById("work2"),
@@ -16,20 +16,29 @@ const works = [
 function changeTeamImgs() {
     if (window.devicePixelRatio > 1) {
         if (window.innerWidth >= 756) {
-            teams[0].src = "img/team1-d.webp";
-            teams[1].src = "img/team2-d.webp";
-            teams[2].src = "img/team3-d.webp";
-            teams[3].src = "img/team4-d.webp";
-        } else if (window.innerWidth >= 480) {
+            mas.innerHTML = "1"
+            setTimeout(function () {
+                teams[0].src = "img/team1-d.webp";
+                teams[1].src = "img/team2-d.webp";
+                teams[2].src = "img/team3-d.webp";
+                teams[3].src = "img/team4-d.webp";
+            },1000)
+        } else if (window.innerWidth >= 756 && window.innerWidth <= 480) {
+            mas.innerHTML = "2"
+            setTimeout(function () {
             teams[0].src = "img/team1-t.webp";
             teams[1].src = "img/team2-t.webp";
             teams[2].src = "img/team3-t.webp";
             teams[3].src = "img/team4-t.webp";
+            },1000)
         } else {
+            mas.innerHTML = "3"
+            setTimeout(function () {
             teams[0].src = "img/team1.webp";
             teams[1].src = "img/team2.webp";
             teams[2].src = "img/team3.webp";
             teams[3].src = "img/team4.webp";
+            },1000)
         }
     } else {
         teams[0].src = 'img/igor.jpg';
