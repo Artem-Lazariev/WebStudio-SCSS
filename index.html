@@ -111,20 +111,49 @@
         <div class="container">
             <h2 class="work__title">Чим ми займаємося</h2>
             <ul class="work__list">
+                <!-- Десктопні додатки -->
                 <li class="work__item">
-                    <img src="./img/default.jpeg" alt="comp" class="work-images" id="work1"/>
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/work1-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/work1-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/work1.webp">
+                        <img src="img/comp.jpg" alt="Десктопні додатки" class="work-images" id="work1">
+                    </picture>
                     <div class="work__wrap">
                         <h3 class="work__deck">Десктопні додатки</h3>
                     </div>
                 </li>
+
+                <!-- Мобільні додатки -->
                 <li class="work__item">
-                    <img src="./img/default.jpeg" alt="tel" class="work-images" id="work2"/>
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/work2-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/work2-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/work2.webp">
+                        <img src="img/tel.jpg" alt="Мобільні додатки" class="work-images" id="work2">
+                    </picture>
                     <div class="work__wrap">
                         <h3 class="work__deck">Мобільні додатки</h3>
                     </div>
                 </li>
+
+                <!-- Дизайнерські рішення -->
                 <li class="work__item">
-                    <img src="./img/default.jpeg" alt="tablet" class="work-images" id="work3"/>
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/work3-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/work3-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/work3.webp">
+                        <img src="img/tablet.jpg" alt="Дизайнерські рішення" class="work-images" id="work3">
+                    </picture>
                     <div class="work__wrap">
                         <h3 class="work__deck">Дизайнерські рішення</h3>
                     </div>
@@ -133,161 +162,170 @@
         </div>
     </section>
 
+
     <section class="team">
         <div class="container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
+                <!-- Ігор Дем'яненко -->
                 <li class="team__item">
-                    <img src="./img/igor.jpg" alt="igor" class="team__img" id="team1"/>
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/team1-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/team1-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/team1.webp">
+                        <img src="img/igor.jpg" alt="Ігор Дем'яненко" class="team__img">
+                    </picture>
                     <div class="team__wrap">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__taxt">Product Designer</p>
                         <ul class="team__items">
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg>
                                 </a>
                             </li>
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg>
                                 </a>
                             </li>
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg>
                                 </a>
                             </li>
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team__item">
-                    <img src="./img/default.jpeg" alt="olha" class="team__img" id="team2"/>
-                    <div class="team__wrap">
-                        <h3 class="team__name">Ольга Рєпіна</h3>
-                        <p class="team__taxt">Frontend Developer</p>
-                        <ul class="team__items">
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team__item">
-                    <img src="./img/default.jpeg" alt="mukola" class="team__img" id="team3"/>
-                    <div class="team__wrap">
-                        <h3 class="team__name">Микола Тарасов</h3>
-                        <p class="team__taxt">Marketing</p>
-                        <ul class="team__items">
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="team__itm">
-                                <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-linkedin"></use></svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
 
+                <!-- Ольга Рєпіна -->
                 <li class="team__item">
-                    <img src="./img/default.jpeg" alt="michael" class="team__img" id="team4"/>
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/team2-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/team2-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/team2.webp">
+                        <img src="img/olha.jpg" alt="Ольга Рєпіна" class="team__img">
+                    </picture>
+                    <div class="team__wrap">
+                        <h3 class="team__name">Ольга Рєпіна</h3>
+                        <p class="team__taxt">Frontend Developer</p>
+                        <ul class="team__items">
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg>
+                                </a>
+                            </li>
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg>
+                                </a>
+                            </li>
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-linkedin"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Микола Тарасов -->
+                <li class="team__item">
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/team3-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/team3-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/team3.webp">
+                        <img src="img/mukola.jpg" alt="Микола Тарасов" class="team__img">
+                    </picture>
+                    <div class="team__wrap">
+                        <h3 class="team__name">Микола Тарасов</h3>
+                        <p class="team__taxt">Marketing</p>
+                        <ul class="team__items">
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg>
+                                </a>
+                            </li>
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg>
+                                </a>
+                            </li>
+                            <li class="team__itm">
+                                <a href="" class="team__link">
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-linkedin"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Михайло Єрмаков -->
+                <li class="team__item">
+                    <picture>
+                        <source media="(min-width: 756px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 756px) and (min-resolution: 192dpi)"
+                                srcset="img/team4-d.webp">
+                        <source media="(min-width: 480px) and (max-width: 755px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (max-width: 755px) and (min-resolution: 192dpi)"
+                                srcset="img/team4-t.webp">
+                        <source media="(max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 479px) and (min-resolution: 192dpi)"
+                                srcset="img/team4.webp">
+                        <img src="img/michael.jpg" alt="Михайло Єрмаков" class="team__img">
+                    </picture>
                     <div class="team__wrap">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__taxt">UI Designer</p>
                         <ul class="team__items">
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg>
                                 </a>
                             </li>
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg>
                                 </a>
                             </li>
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg>
                                 </a>
                             </li>
                             <li class="team__itm">
                                 <a href="" class="team__link">
-                                    <svg class="team__icon">
-                                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                                    </svg>
+                                    <svg class="team__icon"><use href="./img/symbol-defs.svg#icon-linkedin"></use></svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
+                </li>
             </ul>
         </div>
     </section>
+
 
     <section class="client">
         <div class="container">
@@ -480,7 +518,8 @@
 <div class="mobile-menu" id="mobile-menu">
     <button class="mobile-menu__close" id="mobile-menu-close">
         <svg>
-            <use href="../img/header__close.svg"></use>
+            <path d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" fill="#212121"/>
+
         </svg>
     </button>
     <div class="container">

@@ -1186,7 +1186,7 @@ body {
 .mobile-menu__close {
   border: none;
   background: none;
-  margin-left: 710px;
+  margin-left: calc(100vw - 50px);
   margin-top: 20px;
 }
 .mobile-menu__nav {
